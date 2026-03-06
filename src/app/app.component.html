@@ -1,5 +1,5 @@
 <!-- ===== NAVBAR ===== -->
-<header class="navbar-shell">
+<header *ngIf="!esAdmin()" class="navbar-shell">
   <div class="navbar-content">
 
     <!-- Logo -->
@@ -107,7 +107,7 @@
 </main>
 
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer">
+<footer *ngIf="!esAdmin()" class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
       <img src="assets/logotienda.png" alt="Logo" height="46">
