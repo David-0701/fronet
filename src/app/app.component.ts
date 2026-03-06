@@ -59,4 +59,8 @@ export class AppComponent implements OnInit {
     this.menuMobileOpen = false;
     this.router.navigate(['/iniciar']);
   }
+   //funcion nueva(ocultar header y footer de admi)
+  esAdmin(): boolean {
+    return this.router.url.includes('admin');
+  }
 }
